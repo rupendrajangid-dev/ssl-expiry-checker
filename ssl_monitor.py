@@ -2068,11 +2068,14 @@ HTML_UI_CONTENT = """<!DOCTYPE html>
             color: var(--text-main);
             min-height: 100vh;
             padding: 2rem 3rem;
+            display: flex;
+            flex-direction: column;
         }
 
         .container {
             max-width: 100%;
             margin: 0 auto;
+            flex: 1 0 auto;
         }
 
         @media (max-width: 1024px) {
@@ -3335,6 +3338,25 @@ HTML_UI_CONTENT = """<!DOCTYPE html>
             </form>
         </div>
     </div>
+
+    <!-- Footer Section -->
+    <footer style="background: var(--card-bg); backdrop-filter: blur(12px); border: 1px solid var(--card-border); border-radius: 16px; padding: 1.25rem 2rem; margin-top: 3rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); flex-wrap: wrap; gap: 1rem;">
+        <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+            <p style="color: var(--text-muted); font-size: 0.85rem; font-weight: 400; margin: 0; text-align: left;">
+                2026 SSL Expiry Monitor. All rights reserved.
+            </p>
+            <p style="color: rgba(255,255,255,0.15); font-size: 0.7rem; font-weight: 300; margin: 0; font-family: 'JetBrains Mono', monospace; text-align: left;">
+                v1.1.0 &bull; Secure Enterprise Edition
+            </p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem;">
+            <span style="color: var(--text-muted); font-weight: 300;">Designed & Developed by</span>
+            <a href="https://www.linkedin.com/in/rupendrajangid/" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600; text-decoration: none; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.35rem; text-shadow: 0 0 10px rgba(99, 102, 241, 0.1);" onmouseover="this.style.color='var(--accent)'; this.style.textShadow='0 0 15px var(--accent)';" onmouseout="this.style.color='var(--primary)'; this.style.textShadow='0 0 10px rgba(99, 102, 241, 0.1)';">
+                <span>Rupendra Jangid &nbsp; (TAGID Team)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.8; vertical-align: middle;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+        </div>
+    </footer>
 
     <!-- Container for dynamic visual toasts alerts -->
     <div id="toast-container"></div>
