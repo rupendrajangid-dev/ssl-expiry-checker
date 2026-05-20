@@ -117,6 +117,7 @@ Defines alert days, network settings, and background daemon scheduler behaviors:
    SMTP_USERNAME=alerts@yourserver.com
    SMTP_PASSWORD=yoursecurepassword
    SMTP_SENDER_EMAIL=alerts@yourserver.com
+   SMTP_SENDER_NAME="SSL Expiry Monitor"
    SMTP_RECEIVER_EMAILS=fallback-admin@yourserver.com
    DASHBOARD_PASSWORD=admin123
    ```

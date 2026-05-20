@@ -230,6 +230,34 @@ location = /api/login {
 ### 3. App-Specific Credentials for SMTP
 If using external SMTP relays (like Google Workspace, Gmail, or SendGrid), never use account master passwords. Generate a dedicated **App Password** with restricted scopes (Mail-only) and assign it to `SMTP_PASSWORD` in your `.env`.
 
+### 4. SMTP Password Encryption (Fernet AES Symmetric Cryptography)
+To avoid storing raw SMTP credentials in cleartext inside `.env`, you can encrypt the `SMTP_PASSWORD` and load it at runtime via a separate decryption key:
+
+1. **Generate the Encrypted Credentials**:
+   Run the CLI utility tool passing your SMTP password:
+   ```bash
+   python ssl_monitor.py --encrypt-password "YOUR_SMTP_PASSWORD"
+   ```
+   This will output a generated key and the ciphertext payload:
+   ```text
+   === Encryption Results ===
+   SMTP_DECRYPTION_KEY=your_generated_decryption_key
+   SMTP_PASSWORD=enc:your_encrypted_ciphertext
+   ```
+
+2. **Configure the Environment**:
+   * Save the encrypted password in your `.env` file:
+     ```ini
+     SMTP_PASSWORD=enc:your_encrypted_ciphertext
+     ```
+   * In production, set `SMTP_DECRYPTION_KEY` directly in your Systemd service environment file or container secrets. For Systemd, edit `/etc/systemd/system/ssl-monitor.service`:
+     ```ini
+     [Service]
+     ...
+     Environment=SMTP_DECRYPTION_KEY=your_generated_decryption_key
+     ```
+   This ensures the decryption key is not stored in `.env` along with the encrypted password.
+
 ---
 
 ## 💾 Step 6: Database Backups & Maintenance

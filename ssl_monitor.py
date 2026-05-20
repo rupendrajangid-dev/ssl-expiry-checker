@@ -778,7 +778,21 @@ def send_email_alert(results: List[Dict[str, Any]], config: Dict[str, Any], org_
     smtp_port_raw = os.environ.get("SMTP_PORT")
     smtp_user = os.environ.get("SMTP_USERNAME")
     smtp_pass = os.environ.get("SMTP_PASSWORD")
+    if smtp_pass and smtp_pass.startswith("enc:"):
+        decryption_key = os.environ.get("SMTP_DECRYPTION_KEY")
+        if not decryption_key:
+            logger.error("SMTP_PASSWORD is encrypted but SMTP_DECRYPTION_KEY environment variable is not set. Email notification skipped.")
+            return False
+        try:
+            from cryptography.fernet import Fernet
+            f = Fernet(decryption_key.encode())
+            smtp_pass = f.decrypt(smtp_pass[4:].encode()).decode()
+        except Exception as e:
+            logger.error(f"Failed to decrypt SMTP_PASSWORD: {e}. Email notification skipped.")
+            return False
+
     sender = os.environ.get("SMTP_SENDER_EMAIL")
+    sender_name = os.environ.get("SMTP_SENDER_NAME")
     receivers_raw = os.environ.get("SMTP_RECEIVER_EMAILS", "")
 
     # Simple validations for required SMTP settings
@@ -1022,7 +1036,11 @@ def send_email_alert(results: List[Dict[str, Any]], config: Dict[str, Any], org_
             logger.info(f"Sending SMTP email to recipient: {receiver}...")
             msg = MIMEText(email_html, "html", "utf-8")
             msg["Subject"] = subject
-            msg["From"] = sender
+            if sender_name:
+                from email.utils import formataddr
+                msg["From"] = formataddr((sender_name, sender))
+            else:
+                msg["From"] = sender
             msg["To"] = receiver
             server.sendmail(sender, [receiver], msg.as_string())
             
@@ -4580,6 +4598,7 @@ Examples:
     parser.add_argument("--list", "-l", action="store_true", help="List all currently configured domains")
     parser.add_argument("--web", "-w", action="store_true", help="Start the built-in Web Admin UI dashboard server")
     parser.add_argument("--port", "-p", type=int, default=8800, help="Port to run the Web Admin UI on (default: 8800)")
+    parser.add_argument("--encrypt-password", metavar="PASSWORD", help="Encrypt SMTP password and generate secret decryption key")
 
     args = parser.parse_args()
 
@@ -4595,6 +4614,20 @@ Examples:
     elif args.web:
         start_web_server(args.port)
         sys.exit(0)
+    elif args.encrypt_password:
+        try:
+            from cryptography.fernet import Fernet
+            key = Fernet.generate_key().decode()
+            f = Fernet(key.encode())
+            encrypted = f.encrypt(args.encrypt_password.encode()).decode()
+            print("\n=== Encryption Results ===")
+            print(f"SMTP_DECRYPTION_KEY={key}")
+            print(f"SMTP_PASSWORD=enc:{encrypted}")
+            print("\nAdd these two environment variables to your .env file.")
+            sys.exit(0)
+        except Exception as e:
+            print(f"[!] Encryption failed: {e}")
+            sys.exit(1)
 
     # Default action: run the SSL validation check pipeline
     run_monitor(should_exit=True)
