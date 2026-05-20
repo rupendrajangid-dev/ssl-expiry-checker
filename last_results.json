@@ -1,0 +1,322 @@
+{
+  "chunmun-grn.tagid.co.in": {
+    "status": "Warning",
+    "expiry_date": "2026-06-07 17:05:25 IST",
+    "days_remaining": 18,
+    "severity": "Warning",
+    "remarks": "Expires in less than 30 days.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "webhook.tagid.co.in": {
+    "status": "Warning",
+    "expiry_date": "2026-06-07 15:16:00 IST",
+    "days_remaining": 18,
+    "severity": "Warning",
+    "remarks": "Expires in less than 30 days.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "tatamotors-admin.tagid.co.in": {
+    "status": "Warning",
+    "expiry_date": "2026-06-09 16:20:14 IST",
+    "days_remaining": 20,
+    "severity": "Warning",
+    "remarks": "Expires in less than 30 days.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "analytics.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 14:23:04 IST"
+  },
+  "analytics2.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "apiv3.tagsmart.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "cc-admin.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "chunmun-admin.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "demo-admin.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "dhl-admin.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "ethnicity-sales.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "hp-admin.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "license.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "manaca-admin.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "metro-admin.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "su-admin.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "su-sales.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: SSL Handshake failed: CERTIFICATE_VERIFY_FAILED",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "su-tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: DNS resolution failed/Unreachable domain.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "trent-admin.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: SSL Handshake failed: CERTIFICATE_VERIFY_FAILED",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "vendor-admin.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "zecode-admin.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "zeiss-admin.tagid.co.in": {
+    "status": "Failed",
+    "expiry_date": "N/A",
+    "days_remaining": -1,
+    "severity": "Failed",
+    "remarks": "All connection attempts failed: Connection timed out.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "abfrl-admin.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-06 10:42:04 IST",
+    "days_remaining": 77,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 14:22:04 IST"
+  },
+  "ceat-admin.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-06 11:18:03 IST",
+    "days_remaining": 77,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "gocolors-admin.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-06 08:42:14 IST",
+    "days_remaining": 77,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "nzeel-admin.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-06 10:17:42 IST",
+    "days_remaining": 77,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "reports.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-06 10:17:52 IST",
+    "days_remaining": 77,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "snitch-admin.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-06 08:42:04 IST",
+    "days_remaining": 77,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "stylebazaar-admin.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-06 11:17:53 IST",
+    "days_remaining": 77,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "webhook2.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-06 11:42:04 IST",
+    "days_remaining": 77,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "wip-trent.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-06 11:17:42 IST",
+    "days_remaining": 77,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "jr-admin.aws.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-06 16:06:49 IST",
+    "days_remaining": 78,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "rc-admin.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-07 08:17:53 IST",
+    "days_remaining": 78,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "rr-admin.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-07 08:18:03 IST",
+    "days_remaining": 78,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "vj-admin.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-07 08:17:42 IST",
+    "days_remaining": 78,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "goenka-admin.tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-08-08 06:17:42 IST",
+    "days_remaining": 79,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "tagid.co.in": {
+    "status": "Healthy",
+    "expiry_date": "2027-02-26 11:58:45 IST",
+    "days_remaining": 281,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "smartiam.in": {
+    "status": "Healthy",
+    "expiry_date": "2026-06-20 20:28:59 IST",
+    "days_remaining": 31,
+    "severity": "Healthy",
+    "remarks": "Certificate is valid and secure.",
+    "checked_at": "2026-05-20 13:34:24 IST"
+  },
+  "domain-a.com": {
+    "status": "Healthy",
+    "expiry_date": "2027-01-01",
+    "days_remaining": 200,
+    "severity": "Healthy",
+    "remarks": "Mock result for domain-a.com",
+    "checked_at": "2026-05-20 13:32:55 IST"
+  },
+  "domain-b.com": {
+    "status": "Healthy",
+    "expiry_date": "2027-01-01",
+    "days_remaining": 200,
+    "severity": "Healthy",
+    "remarks": "Mock result for domain-b.com",
+    "checked_at": "2026-05-20 13:32:55 IST"
+  }
+}

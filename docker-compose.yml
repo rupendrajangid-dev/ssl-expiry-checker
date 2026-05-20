@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  ssl-monitor:
+    build: .
+    container_name: ssl_monitor_dashboard
+    ports:
+      - "8800:8800"
+    volumes:
+      - ./domains.json:/app/domains.json
+      - ./config.json:/app/config.json
+      - ./last_results.json:/app/last_results.json
+      - ./logs:/app/logs
+    env_file:
+      - .env
+    restart: always
+    command: python ssl_monitor.py --web --port 8800

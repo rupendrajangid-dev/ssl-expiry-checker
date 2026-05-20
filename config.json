@@ -1,0 +1,10 @@
+{
+  "warning_days": 30,
+  "high_priority_days": 14,
+  "critical_days": 7,
+  "timeout": 10,
+  "max_retries": 3,
+  "retry_delay": 5,
+  "max_workers": 20,
+  "send_daily_summary": true
+}

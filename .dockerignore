@@ -1,0 +1,30 @@
+# Exclude virtual environments
+venv/
+.venv/
+env/
+
+# Exclude sensitive environment configurations (must be passed at runtime)
+.env
+
+# Exclude diagnostic logs
+logs/
+*.log
+
+# Exclude python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Exclude Git files
+.git/
+.gitignore
+
+# Exclude editor settings
+.vscode/
+.idea/
+
+# Exclude monitoring runtime states
+last_results.json
+*.lock
+
